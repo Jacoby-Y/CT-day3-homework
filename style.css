@@ -23,6 +23,9 @@ a {
 	color: #0051ff;
 	text-decoration: none;
 }
+a:hover {
+	color: #ff9b49;
+}
 
 #signin-container {
 	border: 1px solid grey;
@@ -44,6 +47,32 @@ a {
 	background: linear-gradient(#fceec8, #f8c75b);
 	border: 1px solid grey;
 	border-radius: 3px;
+}
+
+#need-help {
+	line-height: 1.5rem;
+}
+#hidden-text {
+	display: none;
+}
+#hidden-text a {
+	padding-left: 2rem;
+}
+#triangle:checked ~ #hidden-text {
+	display: inline;
+}
+#triangle {
+	background-color: black;
+	border: none;
+	-webkit-appearance: none;
+	appearance: none;
+	width: 0.8rem;
+	height: 0.8rem;
+	clip-path: polygon(0 0, 90% 50%, 0 100%);
+	cursor: pointer;
+}
+#triangle:checked {
+	clip-path: polygon(0 0, 100% 0, 50% 90%);
 }
 
 #new-to-amazon {
@@ -96,4 +125,8 @@ footer #links {
 	padding: 1rem;
 	display: flex;
 	gap: 2rem;
+}
+
+#hint {
+	color: #aaa;
 }
